@@ -1,4 +1,4 @@
-<% project_name = 'ga-student-forum' %>
+<% project_name = 'GA-student-forum' %>
 
 default: &default
   adapter: postgresql
