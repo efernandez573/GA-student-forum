@@ -2,5 +2,6 @@
 
 class User < ApplicationRecord
   include Authentication
-  # has_many :posts
+  has_many :posts
+  belongs_to :organization
 end
