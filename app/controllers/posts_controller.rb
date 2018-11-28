@@ -1,9 +1,11 @@
-class PostsController < ApplicationController
+# frozen_string_literal: true
+class PostsController < ProtectedController
   before_action :set_post, only: [:show, :update, :destroy]
 
   # GET /posts
   def index
     @posts = Post.all
+    @posts = current_user.posts.all
 
     render json: @posts
   end
@@ -15,7 +17,8 @@ class PostsController < ApplicationController
 
   # POST /posts
   def create
-    @post = Post.new(post_params)
+    # @post = Post.new(post_params)
+    @post = current_user.posts.new(post_params)
 
     if @post.save
       render json: @post, status: :created, location: @post
@@ -47,6 +50,6 @@ class PostsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def post_params
-    params.require(:post).permit(:title, :link, :user_id)
+    params.require(:post).permit(:title, :link, :user_id, :imgurl, :description)
   end
 end
