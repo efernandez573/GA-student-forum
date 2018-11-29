@@ -9,7 +9,6 @@ curl "http://localhost:4741/posts" \
     "post": {
       "title": "'"${TITLE}"'",
       "link": "'"${LINK}"'",
-      "user_id": "'"${USER_ID}"'",
       "imgurl": "'"${IMGURL}"'",
       "description": "'"${DESCRIPTION}"'"
     }

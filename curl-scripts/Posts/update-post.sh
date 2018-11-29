@@ -6,6 +6,8 @@ curl "http://localhost:4741/posts/${ID}" \
   --data '{
     "post": {
       "title": "'"${TITLE}"'",
-      "link": "'"${LINK}"'"
+      "link": "'"${LINK}"'",
+      "imgurl": "'"${IMGURL}"'",
+      "description": "'"${DESCRIPTION}"'"
     }
   }'

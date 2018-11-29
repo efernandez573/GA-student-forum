@@ -3,5 +3,5 @@
 class User < ApplicationRecord
   include Authentication
   has_many :posts
-  belongs_to :organization
+  belongs_to :organization, optional: true
 end
