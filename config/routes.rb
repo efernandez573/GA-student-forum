@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :organizations, except: %i[new edit]
+  # resources :organizations, except: %i[new edit]
   # root 'posts#index'
   resources :posts, except: %i[new edit]
   # RESTful routes
   resources :examples, except: %i[new edit]
   resources :users, only: %i[index show update]
-
 
   # Custom routes
   post '/sign-up' => 'users#signup'

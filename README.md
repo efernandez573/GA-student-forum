@@ -1,1 +1,10 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Technologies used:
+HTML/CSS
+JavaScript
+Ruby
+
+The aim of this application is to have a one stop shop for students within GA programs to add content that they found useful for learning a new technology. 
+
+link to deployed client website:
+https://efernandez573.github.io/GA-student-forum-client/
